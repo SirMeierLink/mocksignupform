@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <div class="text-info">
+          <h1>
+            Learn to code by
+            <br />
+            watching others
+          </h1>
+
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+      </div>
+      <div class="right-side">
+        <p class="accent">
+          <span class="accent-bold">Try it free 7 days</span>
+          <span class="fade">then $20/mo. thereafter</span>
+        </p>
+
+        <form>
+          <div class="input-capture">
+            <input
+              type="text"
+              placeholder="First Name"
+              minlength="3"
+              id="first-name"
+            />
+            <small class="error-message hide">Error</small>
+            <img
+              src="./images/icon-error.svg"
+              class="error-icon hide"
+              alt="error icon"
+            />
+          </div>
+          <div class="input-capture">
+            <input type="text" placeholder="Last Name" id="last-name" />
+            <small class="error-message hide">Error</small>
+            <img
+              src="./images/icon-error.svg"
+              class="error-icon hide"
+              alt="error icon"
+            />
+          </div>
+          <div class="input-capture">
+            <input
+              type="email"
+              placeholder="Email Address"
+              autocomplete="email"
+              id="email"
+            />
+            <small class="error-message hide">Error</small>
+            <img
+              src="./images/icon-error.svg"
+              class="error-icon hide"
+              alt="error icon"
+            />
+          </div>
+          <div class="input-capture">
+            <input
+              type="password"
+              placeholder="Password"
+              autocomplete="new-password"
+              id="password"
+            />
+            <small class="error-message hide">Error</small>
+            <img
+              src="./images/icon-error.svg"
+              class="error-icon hide"
+              alt="error icon"
+            />
+          </div>
+          <input type="submit" value="Claim your free trial" />
+          <p class="small-text">
+            By clicking the button, you are agreeing to our
+            <span class="red-text">Terms and Services</span>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

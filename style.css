@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary colors */
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+
+    /* Accent */
+    --blue: hsl(248, 32%, 49%);
+
+    /* Neutral */
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./images/bg-intro-desktop.png');
+    background-color: var(--red);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+.left-side {
+    width: 35%;
+}
+
+.text-info h1 {
+    color: #fff;
+    font-size: 3rem;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.text-info p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.right-side {
+    width: 40%;
+}
+
+.accent {
+    background-color: var(--blue);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+}
+
+.accent-bold {
+    font-weight: 600;
+}
+
+.fade {
+    color: rgba(255, 255, 255, 0.831);
+}
+
+form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    max-height: 600px;
+    max-width: 600px;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.input-capture {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid var(--grayish-blue);
+}
+
+::placeholder {
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+input:focus {
+    border: none;
+    outline: 1px solid var(--dark-blue);
+}
+
+input[type=submit] {
+    background-color: rgb(5, 156, 5);
+    border: none;
+    /* outline: none; */
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 0 rgba(49, 125, 2, 0.858);
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--green);
+    box-shadow: 0 3px 0 rgba(82, 156, 36, 0.858);
+}
+
+.small-text {
+    margin-top: 10px;
+    font-size: 10px;
+    text-align: center;
+    color: var(--grayish-blue);
+}
+
+.red-text {
+    color: var(--red);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.error-message {
+    color: var(--red);
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.error-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 30px;
+        /* gap: 20px; */
+    }
+
+    .left-side {
+        width: 100%;
+    }
+
+    .left-side .text-info p {
+        font-size: 16px;
+    }
+
+    .right-side {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .text-info h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 1.5rem;
+        line-height: initial;
+        margin-bottom: 20px;
+    }
+
+    .text-info p {
+        text-align: center;
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .accent {
+        padding: 15px 60px;
+    }
+
+    .accent span {
+        font-size: 14px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input[type=submit] {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url("./images/bg-intro-mobile.png");
+    }
+
+    .text-info h1 {
+        font-size: 1.8rem;
+    }
+
+    /* .left-side .text-info p {
+        font-size: .90rem;
+    } */
+}
